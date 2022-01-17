@@ -1,0 +1,4 @@
+/** Override d'une classe bootstrap */
+.bg-primary {
+    background-color: red !important;
+}

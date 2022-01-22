@@ -13,78 +13,69 @@
 
 <body>
 
-    <div class="container-fluid bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- LOGO = BRAND -->
+        <a href="#" class="navbar-brand ps-5">
+            <img src="https://picsum.photos/50/50">
+        </a>
 
-            <div class="container-fluid">
+        <!-- COLLAPSE BTN : RESPONSIVE -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <!-- LOGO = BRAND -->
-                <a href="#" class="navbar-brand">
-                    <img src="https://picsum.photos/50/50">
-                </a>
-
-                <!-- COLLAPSE BTN : RESPONSIVE -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavBar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- MENU -->
-                <div class="collapse navbar-collapse" id="myNavBar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="tp05-bootstrap.html" class="nav-link active">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="page1.html" class="nav-link">Page 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pageContact.html" class="nav-link">Nous contacter</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navDrop">
-                                <li><a class="dropdown-item" href="page1.html">Page 1</a></li>
-                                <li><a class="dropdown-item" href="pageContact.html">Nous contacter</a></li>
-                            </ul>
-                        </li>
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="tp05-bootstrap.html" class="nav-link active">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="page1.html" class="nav-link">Page 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pageContact.html" class="nav-link">Nous contacter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navDrop">
+                        <li><a class="dropdown-item" href="page1.html">Page 1</a></li>
+                        <li><a class="dropdown-item" href="pageContact.html">Nous contacter</a></li>
                     </ul>
-                </div>
-
-            </div>
-
-        </nav>
-
-        <div>
-            <div class="row text-center p-5">
-                <h1>Nous contacter</h1>
-            </div>
-            <form>
-                <div class="mb-3">
-                    <label for="fname" class="form-label">Nom</label>
-                    <input type="text" name="fname" id="fname" aria-describedby="fnameHelp">
-                    <div id="fnameHelp" class="form-text">Votre prénom</div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="lname" class="form-label">Nom</label>
-                    <input type="text" name="lname" id="fname" aria-describedby="lnameHelp">
-                    <div id="lnameHelp" class="form-text">Votre nom de famille</div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre adresse mail.</div>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-              </form>
+                </li>
+            </ul>
         </div>
+    </nav>
 
+    <div class="container-fluid bg-light">
+        <div class="row text-center p-5">
+            <h1>Nous contacter</h1>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="fname" class="form-label">Nom</label>
+                <input type="text" name="fname" id="fname" aria-describedby="fnameHelp">
+                <div id="fnameHelp" class="form-text">Votre prénom</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="lname" class="form-label">Nom</label>
+                <input type="text" name="lname" id="fname" aria-describedby="lnameHelp">
+                <div id="lnameHelp" class="form-text">Votre nom de famille</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre adresse mail.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
